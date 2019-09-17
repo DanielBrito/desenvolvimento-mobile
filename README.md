@@ -1,2 +1,3 @@
-# desenvolvimento-mobile
-📱 Implementações da disciplina de Desenvolvimento de Software para Dispositivos Móveis
+# Desenvolvimento de Software para Dispositivos Móveis
+
+Exercícios e práticas.

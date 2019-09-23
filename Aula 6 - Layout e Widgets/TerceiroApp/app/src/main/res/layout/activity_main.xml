@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:background="#009688"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/checkHamburger"
+        app:layout_constraintStart_toStartOf="@+id/checkHamburger"
+        app:layout_constraintTop_toBottomOf="@+id/checkHamburger" />
+
+    <CheckBox
+        android:id="@+id/checkRefri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Refrigerante"
+        app:layout_constraintEnd_toEndOf="@+id/checkPizza"
+        app:layout_constraintStart_toStartOf="@+id/checkPizza"
+        app:layout_constraintTop_toBottomOf="@+id/checkPizza" />
+
+    <CheckBox
+        android:id="@+id/checkHamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Hamburger"
+        app:layout_constraintEnd_toEndOf="@+id/checkRefri"
+        app:layout_constraintStart_toStartOf="@+id/checkRefri"
+        app:layout_constraintTop_toBottomOf="@+id/checkRefri" />
+
+    <CheckBox
+        android:id="@+id/checkPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142dp"
+        android:text="Pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

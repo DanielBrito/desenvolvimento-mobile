@@ -1,0 +1,41 @@
+LinFreeze 0.9.4
+
+WARNING: THIS SCRIPT CAN EAT YOUR BABIES IF MISUSED! BE VERY CAREFUL OR IT MAY MESS UP YOUR SYSTEM! I TAKE NO RESPONSABILITY FOR ANY DAMAGE CAUSED, AND THERE IS NO WARRANTY.
+
+HELP WANTED: I need localization help! Google Translate won't cut it for me. I have a basic .pot file ready, all you have to do is translate it. Keep the variables intact please!
+
+AUTHORS
+  Ryan Peters <sloshy45 [--at--] sbcglobal [--dot--] net>
+  Spanish (es) translation: http://identi.ca/larusalka
+
+DESCRIPTION
+  LinFreeze is a script you can use to "freeze" a user's home directory or any other directory so that file changes are not permanent.
+It does this by layering a tmpfs layer on top of the user's home folder (or the directory of your choosing), where all changes will be stored.
+Optionally, you may use a "static" directory to be layered on top of the directory containing temporary, read-only files and folders.
+
+DEPENDENCIES
+  0-	aufs (aufs2 on Arch Linux)
+  1-	bash
+  2-	sed
+  3-	gzip
+  4-	A standard, UNIX-like filesystem structure with /etc/fstab and user directories in /home
+
+INSTALL
+  1. Copy "linfreeze" to /usr/bin.
+  2. Compress "linfreeze.1", the man page, with gzip.
+  3. Copy "linfreeze.1.gz" to /usr/share/man/man1.
+
+PACKAGES
+  Arch Linux: http://aur.archlinux.org/packages.php?ID=41504
+
+INSTRUCTIONS
+  run 'linfreeze -h' to see a list of commands and 'linfreeze -v' to see the version number.
+  'linfreeze -d [directory]' recursively 'freezes' a directory.
+  'linfreeze -f [user]' lets you 'freeze' a user.
+  'linfreeze -u' 'unfreezes' all users and removes their temporary directories.
+  'linfreeze -s [user or directory]' 'unfreezes' a specific user or directory, leaving the others untouched.
+  'linfreeze -c' removes the temporary directories for users and directories.
+  'linfreeze -l' lists the 'frozen' users and directories
+
+COPYING
+  LinFreeze is distributed under the GPL Version 3 or any higher version.

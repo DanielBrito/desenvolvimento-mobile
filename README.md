@@ -1,5 +1,5 @@
 # Desenvolvimento de Software para Dispositivos Móveis
 
-Exercícios e práticas.
+Aplicações desenvolvidas na disciplina de Desenvolvimento de Software para Dispositivos Móveis da Universidade Federal do Ceará.
 
-O projeto final pode ser encontrado [aqui](https://github.com/HaLugar/halugar-android).
+O [HáLugar](https://github.com/HaLugar/halugar-android) é resultado do projeto final.
